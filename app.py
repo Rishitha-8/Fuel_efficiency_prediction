@@ -38,13 +38,16 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     cylinders = st.text_input("Cylinders")
-    Displacement = st.text_input("displacement")
-    horsepower = st.text_input("horsepower")
-    weight = st.text_input("weight")
-    acceleration=st.text_input("acceleration")
-    modelyear=st.text_input("model year")
+    displacement = st.text_input("Displacement")
+    horsepower = st.text_input("Dorsepower")
+    weight = st.text_input("Weight")
+    acceleration=st.text_input("Acceleration")
+    modelyear=st.text_input("Model Year")
     origin_list=['1','2','3']
-    origin=st.selectbox("select the origin-  1:USA,  2: Europe , 3: Japan",origin_list)
+    origin=st.selectbox("select the origin- 
+                        1:USA 
+                        2: Europe 
+                        3: Japan",origin_list)
     result=""
     if st.button("Predict"):
         result=predict_stock(cylinders,displacement,horsepower,weight,acceleration,modelyear,origin)
