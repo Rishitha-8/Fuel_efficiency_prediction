@@ -37,8 +37,8 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    cylinders = st.text_input("cylinders")
-    displacement = st.text_input("displacement")
+    cylinders = st.text_input("Cylinders")
+    Displacement = st.text_input("displacement")
     horsepower = st.text_input("horsepower")
     weight = st.text_input("weight")
     acceleration=st.text_input("acceleration")
