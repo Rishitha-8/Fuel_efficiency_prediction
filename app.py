@@ -13,7 +13,7 @@ import os
 
 
 
-pickle_in=open("D:\downloads\model.pkl","rb")
+pickle_in=open("model.pkl","rb")
 model=pickle.load(pickle_in)
 
 
